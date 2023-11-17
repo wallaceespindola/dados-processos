@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+Test API
+<script>
+  async function buscarProcesso() {
+    try {
+      const response = await fetch('/buscarProcesso');
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log('Oooops ERROR:');
+      console.log(error);
+    }
+  }
+
+  buscarProcesso();
+<!--  buscarProcesso()-->
+<!--  .then((data) => console.log(data))-->
+<!--  .catch((erro) => console.log(erro));-->
+</script>
+</body>
+</html>
